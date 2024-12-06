@@ -2,7 +2,7 @@ import { MdOutlineSubtitlesOff } from "react-icons/md";
 
 const RightSidebar = () => {
     return (
-      <div className="bg-gray-100 p-4 space-y-4">
+      <div className="bg-white p-4 space-y-4 rounded-md hidden md:block">
         <h3 className="font-semibold">Settings</h3>
         <div>
           <label className="block text-sm font-medium">Paragraph Font Size</label>
@@ -16,7 +16,7 @@ const RightSidebar = () => {
             <option>Vitamin C</option>
           </select>
         </div>
-        <div className="flex justify-between items-center justify-center">
+        <div className="flex justify-between items-center ">
           <p>Turn of subtitle</p>
           <MdOutlineSubtitlesOff />
         </div>

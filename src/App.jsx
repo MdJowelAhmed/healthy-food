@@ -9,21 +9,14 @@ function App() {
   return (
     <div className="max-w-[1440px] container mx-auto">
       <Navbar />
-      <div className="flex bg-gray-200 p-5">
-        {/* Left Section */}
-        <div className=" w-1/6">
-          <SideIcons />
-          <Menubar />
+      <div className="md:flex bg-gray-200 gap-6 p-4 md:p-6">
+        <div className=" md:w-1/6">
+          <Menubar className="hidden md:block" />
         </div>
-
-        {/* Main Section */}
-        <div className=" ">
-          <SocialLinks />
+        <div className=" flex-1">
           <MainBody />
         </div>
-
-        {/* Right Section */}
-        <div className="bg-gray-200 w-1/6">
+        <div className="bg-gray-200 md:w-1/6">
           <RightSidebar />
         </div>
       </div>
