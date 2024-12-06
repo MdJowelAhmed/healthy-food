@@ -45,11 +45,11 @@ Move to Project folder
 cd healthy-food
 
 npm install
-# or
-yarn installl
+or
+yarn install
 
 npm run dev
-# or
+or
 yarn dev
 
 Open your browser and navigate to: http://localhost:5173
