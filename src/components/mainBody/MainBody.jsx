@@ -1,3 +1,5 @@
+import { FaStar } from "react-icons/fa";
+
 const MainBody = () => {
   return (
     <div>
@@ -83,25 +85,15 @@ const MainBody = () => {
 
         {/* Feedback Section */}
         <div className="mt-10">
-          <h3 className="text-lg font-semibold mb-4">Was This Helpful?</h3>
-          <div className="flex items-center gap-2">
-            <button className="text-orange-500 text-xl">
-              <i className="fas fa-star"></i>
-            </button>
-            <button className="text-orange-500 text-xl">
-              <i className="fas fa-star"></i>
-            </button>
-            <button className="text-orange-500 text-xl">
-              <i className="fas fa-star"></i>
-            </button>
-            <button className="text-orange-500 text-xl">
-              <i className="fas fa-star"></i>
-            </button>
-            <button className="text-gray-400 text-xl">
-              <i className="fas fa-star"></i>
-            </button>
-          </div>
-        </div>
+      <h3 className="text-lg font-semibold mb-4">Was This Helpful?</h3>
+      <div className="flex items-center gap-2">
+        <FaStar className="text-orange-500 text-xl" />
+        <FaStar className="text-orange-500 text-xl" />
+        <FaStar className="text-orange-500 text-xl" />
+        <FaStar className="text-orange-500 text-xl" />
+        <FaStar className="text-gray-400 text-xl" />
+      </div>
+    </div>
       </div>
     </div>
   );
