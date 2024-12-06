@@ -32,11 +32,11 @@ const Navbar = () => {
       </div>
 
       {/* Middle Search Bar */}
-      <div className="flex items-center border px-4 py-2 rounded-md bg-white dark:bg-gray-700 dark:text-white flex-grow md:flex-grow-0">
+      <div className="flex items-center border px-4 py-2 rounded-md bg-white dark:bg-gray-700 dark:text-white flex-grow md:flex-grow-0 w-full md:w-auto">
         <input
           type="text"
           placeholder="Search Best Food"
-          className="flex-grow bg-white dark:bg-gray-700 focus:outline-none text-gray-800 dark:text-white"
+          className="flex-grow bg-white dark:bg-gray-700 focus:outline-none text-gray-800 dark:text-white w-full md:w-auto"
         />
         <FiSearch className="text-gray-500 dark:text-gray-300 text-lg ml-2" />
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <FiMoon className="text-blue-600 text-xl" />
           )}
         </button>
-        <CgCopy className="text-gray-400 text-xl"/>
+        <CgCopy className="text-gray-400 text-xl" />
         {/* Mobile Menu Toggle Icon */}
         <button
           onClick={toggleMenu}
