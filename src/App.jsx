@@ -7,11 +7,11 @@ import RightSidebar from "./components/sidemenu/RigntSidebar";
 
 function App() {
   return (
-    <div>
+    <div className="max-w-[1440px] container mx-auto">
       <Navbar/>
       <div className="flex bg-gray-200 p-5">
         {/* Left Section */}
-        <div className=" w-1/5">
+        <div className=" w-1/6">
           <SideIcons />
           <Menubar />
         </div>
@@ -22,7 +22,7 @@ function App() {
         </div>
 
         {/* Right Section */}
-        <div className="bg-gray-200 w-1/4">
+        <div className="bg-gray-200 w-1/6">
           <RightSidebar />
           <SocialLinks />
         </div>

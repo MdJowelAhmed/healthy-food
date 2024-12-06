@@ -28,7 +28,7 @@ const Menubar = () => {
                 : "hover:bg-gray-100"
             }`}
           >
-            <div className="w-10 h-10">
+            <div className="w-7 h-7">
               <img
                 src={`https://fruitnames.net/wp-content/uploads/2023/10/apples-on-a-tree-branch.jpg`} 
                 alt={fruit.name}
