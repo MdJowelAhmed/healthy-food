@@ -26,7 +26,7 @@ const Navbar = () => {
         />
 
         {/* Logo (Hidden on Small Screens) */}
-        <h1 className="text-lg md:text-2xl font-bold text-orange-600 hidden md:block">
+        <h1 className="text-lg md:text-2xl font-bold text-orange-600 hidden lg:block">
           Healthy Food
         </h1>
       </div>

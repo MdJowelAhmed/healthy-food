@@ -68,13 +68,13 @@ const Menubar = () => {
     <div className="flex gap-4">
       <div className="flex items-center">
         {/* Side icons are displayed only on larger screens */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <SideIcons />
         </div>
       </div>
 
       {/* Main menu container */}
-      <div className="bg-white dark:bg-gray-800 p-4 rounded-lg hidden md:block shadow-md mx-auto">
+      <div className="bg-white dark:bg-gray-800 p-4 rounded-lg hidden lg:block shadow-md mx-auto">
         {/* Tab navigation for Fruits and Vegetables */}
         <div className="flex justify-between mb-4">
           <button

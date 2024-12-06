@@ -3,7 +3,7 @@ import { MdOutlineSubtitlesOff } from "react-icons/md";
 // RightSidebar component handles the settings panel for font size, vitamin type selection, and subtitle toggle
 const RightSidebar = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 p-4 space-y-4 rounded-md hidden md:block shadow-md">
+    <div className="bg-white dark:bg-gray-800 p-4 space-y-4 rounded-md hidden lg:block shadow-md">
       <h3 className="font-semibold text-gray-800 dark:text-white">Settings</h3>
       <div>
         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
