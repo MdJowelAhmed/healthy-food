@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CgCopy } from "react-icons/cg";
 import { FiSun, FiMoon, FiMenu, FiSearch, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -17,14 +18,18 @@ const Navbar = () => {
   return (
     <div className="bg-white dark:bg-gray-800 dark:text-white shadow-md flex justify-between items-center px-4 md:px-6 py-3">
       {/* Left Bar Icon (Hidden on Large Screens) */}
-      <button className="p-2 rounded-full border focus:outline-none md:hidden">
-        <FiMenu className="text-gray-600 dark:text-gray-300 text-xl" />
-      </button>
+      <div className="flex gap-2 justify-center items-center">
+        <img
+          src="https://thumbs.dreamstime.com/b/healthy-food-logo-symbol-icon-template-338815517.jpg"
+          alt="logo"
+          className="w-16 h-16 rounded-full"
+        />
 
-      {/* Logo (Hidden on Small Screens) */}
-      <h1 className="text-lg md:text-2xl font-bold text-orange-600 hidden md:block">
-        Food Benefits
-      </h1>
+        {/* Logo (Hidden on Small Screens) */}
+        <h1 className="text-lg md:text-2xl font-bold text-orange-600 hidden md:block">
+          Healthy Food
+        </h1>
+      </div>
 
       {/* Middle Search Bar */}
       <div className="flex items-center border px-4 py-2 rounded-md bg-white dark:bg-gray-700 dark:text-white flex-grow md:flex-grow-0">
@@ -49,7 +54,7 @@ const Navbar = () => {
             <FiMoon className="text-blue-600 text-xl" />
           )}
         </button>
-
+        <CgCopy className="text-gray-400 text-xl"/>
         {/* Mobile Menu Toggle Icon */}
         <button
           onClick={toggleMenu}

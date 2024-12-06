@@ -6,37 +6,37 @@ import { TbLocationShare } from "react-icons/tb";
 import { LuMessageSquareDiff } from "react-icons/lu";
 import { PiCirclesFourBold } from "react-icons/pi";
 
+// MainBody component contains the main content of the page with dynamic sections and mobile icons
 const MainBody = () => {
   return (
     <div>
-      <div className="bg-white md:ml-8 p-2 md:p-6 lg:p-10 flex flex-col lg:flex-row-reverse gap-6 rounded-xl">
-        <div className="  ">
-          {/* First Section */}
+      <div className="bg-white dark:bg-gray-800 md:ml-8 p-2 md:p-6 lg:p-10 flex flex-col lg:flex-row-reverse gap-6 rounded-xl">
+        <div>
+          {/* First Section: Health Benefits of Avocado */}
           <div className="flex flex-col lg:flex-row gap-4 mb-10">
             {/* Text Section */}
             <div className="w-full lg:w-1/2">
-              <h1 className="text-3xl font-bold mb-6">
+              <h1 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">
                 Health Benefits Of An Avocado
               </h1>
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-xl font-semibold mb-4">
+                  <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
                     Supports eye health:
                   </h2>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
                     Spinach contains high levels of Vitamin A and other
                     antioxidants that help maintain healthy vision and protect
                     against age-related macular degeneration.
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <h2 className="text-xl font-semibold mb-4">
-                    Supports eye health:
+                  <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
+                    Supports heart health:
                   </h2>
-                  <p className="text-gray-700 text-sm">
-                    Spinach contains high levels of Vitamin A and other
-                    antioxidants that help maintain healthy vision and protect
-                    against age-related macular degeneration.
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    Avocados are high in healthy monounsaturated fats that may
+                    help reduce bad cholesterol and improve heart health.
                   </p>
                 </div>
               </div>
@@ -52,9 +52,9 @@ const MainBody = () => {
             </div>
           </div>
 
-          {/* Second Section */}
+          {/* Second Section: Apple Fruit Benefits */}
           <div className="mb-10">
-            <p>
+            <p className="text-gray-800 dark:text-gray-300">
               In this blog post, we will explore all about Apple Fruit – its
               various types, intriguing history, rich nutritional value, and
               incredible health benefits. Apples are a popular fruit that has
@@ -65,19 +65,16 @@ const MainBody = () => {
             </p>
           </div>
 
-          {/* third section  */}
-          <div className="flex flex-col-reverse  gap-4 lg:flex-row-reverse">
+          {/* Third Section: Additional Health Benefits */}
+          <div className="flex flex-col-reverse gap-4 lg:flex-row-reverse">
             {/* Text Section */}
             <div className="w-full lg:w-1/2">
-              <h2 className="text-2xl font-semibold mb-4">
-                Supports eye health:
+              <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
+                Supports immunity:
               </h2>
-              <p className="text-gray-700">
-                In this blog post, we will explore all about Apple Fruit – its
-                various types, intriguing history, rich nutritional value, and
-                incredible health benefits. Apples are a popular fruit that has
-                been enjoyed by people all around the world for centuries. Known
-                scientifically as Malus domestica, apples belong to the ...
+              <p className="text-gray-700 dark:text-gray-300">
+                Apples are high in Vitamin C, which helps to boost the immune
+                system and fight off infections.
               </p>
             </div>
 
@@ -85,7 +82,7 @@ const MainBody = () => {
             <div className="w-full lg:w-1/2">
               <img
                 src="https://fruitnames.net/wp-content/uploads/2023/10/apples-on-a-tree-branch.jpg"
-                alt="Avocado"
+                alt="Apple"
                 className="rounded-lg"
               />
             </div>
@@ -93,7 +90,9 @@ const MainBody = () => {
 
           {/* Feedback Section */}
           <div className="mt-10">
-            <h3 className="text-lg font-semibold mb-4">Was This Helpful?</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
+              Was This Helpful?
+            </h3>
             <div className="flex items-center gap-2">
               <FaStar className="text-orange-500 text-xl" />
               <FaStar className="text-orange-500 text-xl" />
@@ -104,6 +103,7 @@ const MainBody = () => {
           </div>
         </div>
 
+        {/* Social Links Section */}
         <div>
           <div className="lg:mt-10">
             <SocialLinks />
@@ -111,7 +111,8 @@ const MainBody = () => {
         </div>
       </div>
 
-      <div className="block md:hidden ">
+      {/* Mobile Icons */}
+      <div className="block md:hidden">
         <div className="flex justify-center items-center gap-10 py-4">
           <button className="text-gray-600 hover:text-orange-600 text-2xl">
             <FaHome />
