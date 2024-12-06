@@ -1,18 +1,23 @@
+import React from "react";
+import { FaFacebook, FaTwitter, FaShareAlt, FaLinkedin } from "react-icons/fa";
+
 const SocialLinks = () => {
-    return (
-      <div className="flex gap-4 items-center">
-        <button className="text-blue-500">
-          <i className="fab fa-facebook"></i>
-        </button>
-        <button className="text-blue-400">
-          <i className="fab fa-twitter"></i>
-        </button>
-        <button className="text-orange-500">
-          <i className="fas fa-share-alt"></i>
-        </button>
-      </div>
-    );
-  };
-  
-  export default SocialLinks;
-  
+  return (
+    <div className="flex gap-4 items-center">
+      <button className="text-blue-500 text-2xl">
+        <FaFacebook />
+      </button>
+      <button className="text-blue-500 text-2xl">
+        <FaLinkedin />
+      </button>
+      <button className="text-blue-400 text-2xl">
+        <FaTwitter />
+      </button>
+      <button className="text-orange-500 text-2xl">
+        <FaShareAlt />
+      </button>
+    </div>
+  );
+};
+
+export default SocialLinks;

@@ -8,7 +8,7 @@ import RightSidebar from "./components/sidemenu/RigntSidebar";
 function App() {
   return (
     <div className="max-w-[1440px] container mx-auto">
-      <Navbar/>
+      <Navbar />
       <div className="flex bg-gray-200 p-5">
         {/* Left Section */}
         <div className=" w-1/6">
@@ -17,14 +17,14 @@ function App() {
         </div>
 
         {/* Main Section */}
-        <div className="flex-1 ">
+        <div className=" ">
+          <SocialLinks />
           <MainBody />
         </div>
 
         {/* Right Section */}
         <div className="bg-gray-200 w-1/6">
           <RightSidebar />
-          <SocialLinks />
         </div>
       </div>
     </div>

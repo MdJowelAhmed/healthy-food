@@ -54,7 +54,7 @@ const Menubar = () => {
   );
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md max-w-md mx-auto">
+    <div className="bg-white p-4 rounded-lg shadow-md  mx-auto">
       {/* Tabs */}
       <div className="flex justify-between mb-4">
         <button
